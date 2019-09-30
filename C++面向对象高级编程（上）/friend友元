@@ -1,0 +1,3 @@
+可以自由地取得private成员
+
+相同class的各个objects互为friend
