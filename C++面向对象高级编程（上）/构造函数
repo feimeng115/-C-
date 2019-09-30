@@ -1,0 +1,29 @@
+1. 创建对象时就会自动调用构造函数
+2. 构造函数的名称要和类的名称一样
+3. 没有返回类型
+4. 只有构造函数有初始化列表，其他函数没有
+  
+  初始化列表的性能比直接在构造函数中赋值要快，建议使用这种方式
+  class complex
+   {
+    public:
+      complex(double r=0, double i=0) : re(r), im(i) # 初始化列表
+      {}
+    private:
+      double re, im;
+   }
+   
+   下面的赋值方法不推荐：
+   class complex
+   {
+    public:
+      complex(double r=0, double i=0)
+      {
+        re = r;  # 赋值方法
+        im = i;
+      }
+    private:
+      double re, im;
+   }
+   
+ 5. 构造函数可以有很多个（重载）
