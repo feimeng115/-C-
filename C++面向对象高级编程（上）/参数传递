@@ -1,2 +1,8 @@
+参数传递：
 pass by value(尽量不要用) 
 pass by reference(to const)（尽量使用这种引用（指针），速度快）
+
+传引用，可以加const，防止修改原始数据
+
+
+返回值传递也是尽量使用传引用
