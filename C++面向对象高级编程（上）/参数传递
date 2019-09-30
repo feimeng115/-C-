@@ -1,0 +1,2 @@
+pass by value(尽量不要用) 
+pass by reference(to const)（尽量使用这种引用（指针），速度快）
